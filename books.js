@@ -1,3 +1,7 @@
+/*eslint-disable no-restricted-globals */
+/*eslint-disable no-unused-vars */
+
+
 const books = [
   {
     title: 'The Power of Now',
@@ -47,11 +51,11 @@ displayBooksList(getBookList());
 
 //add a book
 
-const addedBook = document.querySelector('#added-book');
-addedBook.addEventListener('submit', function (newEvent) {
-  newEvent.preventDefault();
-  const title = newEvent.target.querySelector('#title').value;
-  const author = newEvent.target.querySelector('#author').value;
+const addBook = document.querySelector('#added-book');
+addBook.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const title = event.target.querySelector('#title').value;
+  const author = event.target.querySelector('#author').value;
   const bookList = getBookList();
   const id = bookList.length + 1;
   bookList.push({
@@ -66,9 +70,9 @@ addedBook.addEventListener('submit', function (newEvent) {
 
 
 // remove a book
-bookListSection.addEventListener('click', (newEvent) => {
-  if (newEvent.target.classList.contains('remove')) {
-    const { id } = newEvent.target.dataset;
+bookListSection.addEventListener('click', (event) => {
+  if (event.target.classList.contains('remove')) {
+    const { id } = event.target.dataset;
     const bookList = getBookList();
     const bookListFiltered = bookList.filter((book) => book.id !== +id);
     displayBooksList(bookListFiltered);
