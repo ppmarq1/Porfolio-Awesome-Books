@@ -18,6 +18,8 @@ const books = [
 
 const bookListSection = document.querySelector('#added-bklist');
 
+
+// Display and create a button remove
 function displayBooksList(bookList) {
   bookListSection.innerHTML = bookList.map((book) => `
   <p class="title">${book.title}</p>
@@ -26,9 +28,12 @@ function displayBooksList(bookList) {
               <hr>`).join('');
 }
 
+
+//storare
 function storeBook(bookList) {
   localStorage.setItem('bookList', JSON.stringify(bookList));
 }
+
 
 function getBookList() {
   const bookListFromLocalStorage = localStorage.getItem('bookList');
@@ -40,11 +45,13 @@ function getBookList() {
 
 displayBooksList(getBookList());
 
-const addBook = document.querySelector('#added-book');
-addBook.addEventListener('submit', function (event) {
-  event.preventDefault();
-  const title = event.target.querySelector('#title').value;
-  const author = event.target.querySelector('#author').value;
+//add a book
+
+const addedBook = document.querySelector('#added-book');
+addedBook.addEventListener('submit', function (newEvent) {
+  newEvent.preventDefault();
+  const title = newEvent.target.querySelector('#title').value;
+  const author = newEvent.target.querySelector('#author').value;
   const bookList = getBookList();
   const id = bookList.length + 1;
   bookList.push({
@@ -57,9 +64,11 @@ addBook.addEventListener('submit', function (event) {
   storeBook(bookList);
 });
 
-bookListSection.addEventListener('click', (event) => {
-  if (event.target.classList.contains('remove')) {
-    const { id } = event.target.dataset;
+
+// remove a book
+bookListSection.addEventListener('click', (newEvent) => {
+  if (newEvent.target.classList.contains('remove')) {
+    const { id } = newEvent.target.dataset;
     const bookList = getBookList();
     const bookListFiltered = bookList.filter((book) => book.id !== +id);
     displayBooksList(bookListFiltered);
