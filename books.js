@@ -1,7 +1,3 @@
-/*eslint-disable no-restricted-globals */
-/*eslint-disable no-unused-vars */
-
-
 const books = [
   {
     title: 'The Power of Now',
