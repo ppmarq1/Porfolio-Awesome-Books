@@ -1,70 +1,67 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Books
+# Project Name
 
-> This is our first pair-programming project in Module 2.
+> Awesome books - Javascript with Objects
+
 
 ## Built With
 
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
-## Live Demo
+## Live Demo 
 
-Visit ...... to view online
+Feel free to check the: [Portfolio-link](https://ehs9nino.github.io/Awesome-books/)
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- Web Browser
-- VS Code
+## Setup
+- Clone this repository to your desktop.
+- Navigate to the top level of the directory.
 
 ### Install
+ Clone the repository
+git@github.com:ehs9nino/Awesome-books.git
+npm . init -y
+npm install
 
-1. Clone the repo or download the repo files
+## Run tests
+npx stylelint "**/*.{css,scss}"
+npx hint .
+npx eslint .
 
-> git clone git@github.com:ramrod433/Awesome-Books.git
+- Web Browser
+- [Visual Studio code](https://code.visualstudio.com/)
 
-2. Open folder or zip in VS Code
-
-3. Run the HTML file (index.html) on Browser locally or with Live Server
 
 ## Authors
 
-👤 **Nii Amanor Djoleto**
+👤 ## Author
 
-- GitHub: [@ramrod433](https://github.com/ramrod433)
-- Twitter: [@\_Djoleto](https://twitter.com/_djoleto_)
-- LinkedIn: [Nii Amanor Djoleto](https://linkedin.com/in/nii-amanor-djoleto-072b8a14a)
+👤 **Pedro Marques**
 
-👤 **Faith Dinma**
+- GitHub: https://github.com/ppmarq1
+- Twitter: https://twitter.com/ppmarq1
+- LinkedIn: https://br.linkedin.com/in/pedroalmeidamarques/  
 
-- GitHub: [@githubhandle](https://github.com/Dinma-Faith)
-- Twitter: [@twitterhandle](https://twitter.com/paul_dinma
-- LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
+👤 **Ehsan**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/ehsan9nino)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ehsan-qader-a230a6165/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/ehs9nino/Awesome-books/issues).
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
