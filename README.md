@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-Feel free to check the: [Portfolio-link](https://ehs9nino.github.io/Awesome-books/)
+Feel free to check the: [Portfolio-link](https://ppmarq1.github.io/Porfolio-Awesome-Books/)
 
 
 ### Prerequisites
@@ -24,7 +24,7 @@ Feel free to check the: [Portfolio-link](https://ehs9nino.github.io/Awesome-book
 
 ### Install
  Clone the repository
-git@github.com:ehs9nino/Awesome-books.git
+https://github.com/ppmarq1/Porfolio-Awesome-Books.git
 npm . init -y
 npm install
 
@@ -57,7 +57,7 @@ npx eslint .
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ehs9nino/Awesome-books/issues).
+Feel free to check the [issues page](https://github.com/ppmarq1/Porfolio-Awesome-Books/issues).
 
 ## Show your support
 
