@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Awesome books - Javascript with Objects
+> Awesome books - Javascript with Classes
 
 
 ## Built With
