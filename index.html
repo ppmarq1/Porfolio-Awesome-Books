@@ -8,23 +8,38 @@
     <title>Awesome Books</title>
   </head>
   <body>
-    <h1>Awesome Books</h1>
-    <section id="added-bklist" class="books"></section>
-    <form id="added-book">
-      <br />
-      <div>
-        <label for="title"></label>
-        <input type="text" id="title" placeholder="Title" required />
-      </div>
-      <br />
-      <div>
-        <label for="author"></label>
-        <input type="text" id="author" placeholder="Author" required />
-      </div>
-      <br />
-      <div><button type="submit" id="add-button">Add</button></div>
-    </form>
-
-    <script src="index.js"></script>
+    <div class="container">
+      <h1>My Book</h1>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="Title">Title</label>
+              <input type="text" id="title"
+              class="form-control">
+            </div>        
+            <div class="form-group">
+              <label for="Author">Author</label>
+              <input type="text" id="author"
+               class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="idnumber">ID#</label>
+              <input type="text" id="idnumber"
+              class="form-control">
+            </div>
+           <input type="submit" name="" id="Add Book">
+          </form>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ID#</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody> id="book-list"></tbody>
+          </table>
+    </div>
+    <script src="refactor.js"></script>
   </body>
 </html>
